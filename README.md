@@ -1,10 +1,10 @@
 # Bank Norwegian Interview Task - 2023
 
 
-## How to test
+## How to run app in local and test
 1. Go to the application folder.
 2. Open cmd on this folder
-3. Python version is 3.10.11
+3. Python version is 3.11.5
 4. Create a virtual environment for the app:
 	- python3 -m venv .venv
 	- .venv\scripts\activate
@@ -14,9 +14,14 @@
 	- flask run
 7. Testing using Postman app:
     - Import collection postman/BN.postman_collection.json to Postman
-    - There are 3 request: 
-      - 2 request for single customer
+    - There are 4 requests: 
+      - 3 request for single customer
       - 1 request for multiple customers as same time
+8. Test with pytest:
+   - pytest
+
+## Github url
+https://github.com/dungcoph/scorecards
 
 ## App logic
 

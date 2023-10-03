@@ -1,3 +1,8 @@
+"""
+Create scorecards map from Excel file with an input is the path to the Excel file
+Output of this is all scorecards that store in scorecards_map
+"""
+
 import pandas as pd
 from src.utils import get_number_from_string, get_parent_dir
 from src.variables import BandPoint, ScorecardVariable, VARIABLES_MAPPING, Scorecard

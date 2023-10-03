@@ -1,10 +1,14 @@
+"""
+Calculate one application.
+Create all scorecards from Excel file and apply the input to get output
+"""
+
 from src.application import Application, build_input_data
 from src.read_scorecards_from_excel import covert_excel_file_to_scorecards_map, get_scorecard_with_key
 from src.scorecard import calculate_scorecard
 
 
 def calculate_output(application: Application) -> Application:
-    print(application)
     # Get scorecards_map of all type scorecard from Excel file
     path_to_excel_scorecard = 'scorecards.xlsx'
     scorecards_map = covert_excel_file_to_scorecards_map(path_to_excel_scorecard)

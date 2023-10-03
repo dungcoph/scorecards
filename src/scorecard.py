@@ -1,3 +1,12 @@
+"""
+Scorecards model to calculate score sum and probability of default
+
+All variables are dived to 2 types:
+    - Category
+    - Range
+Each type of variables have a function to calculate score for these variable.
+"""
+
 from typing import Union
 import math
 from src.variables import Scorecard, ScorecardVariable, VariableType, BandPoint

@@ -1,3 +1,7 @@
+"""
+Class of Input and Output
+"""
+
 from dataclasses import dataclass, field
 from src.utils import convert_date_to_years
 

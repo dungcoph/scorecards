@@ -1,3 +1,12 @@
+"""
+Define class that use in scorecard model:
+    - BandPoint
+    - VariableType
+    - Variable
+    - ScorecardVariable
+    - Scorecard
+"""
+
 from dataclasses import dataclass
 from enum import Enum
 

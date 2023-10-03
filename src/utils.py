@@ -1,3 +1,7 @@
+"""
+Some helper functions that are used in app
+"""
+
 import math
 import pathlib
 import re
