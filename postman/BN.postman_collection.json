@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "b6332d72-dab3-40ac-bf8c-dd524372d145",
+		"name": "BN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9007490"
+	},
+	"item": [
+		{
+			"name": "customer UL_00",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": {\r\n        \"product_type\": \"UL\",\r\n        \"application_date\": \"2023-09-26T14:14:51.232320\",\r\n        \"car_loan_debt\": 3000,\r\n        \"mortgage_debt\": 0,\r\n        \"study_loan_debt\": 3000,\r\n        \"unsecured_debt\": 60000,\r\n        \"requested_loan_amount\": 1000000,\r\n        \"applicant1\": {\r\n            \"age\": 34,\r\n            \"accomodation_type_id\": 2,\r\n            \"employment_type_id\": 1,\r\n            \"gross_yearly_income\": 33000,\r\n            \"monthly_rent\": 1200,\r\n            \"employed_since\": \"2020-04-01T00:00:00\"\r\n        }\r\n    },\r\n    \"output\": {\r\n        \"score_sum\": null,\r\n        \"pd\": null,\r\n        \"scorecard_name\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer CC_00",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": {\r\n        \"product_type\": \"CC\",\r\n        \"application_date\": \"2023-09-15T14:14:51.229139\",\r\n        \"car_loan_debt\": 28000,\r\n        \"mortgage_debt\": 0,\r\n        \"study_loan_debt\": 7000,\r\n        \"unsecured_debt\": 36000,\r\n        \"requested_loan_amount\": null,\r\n        \"applicant1\": {\r\n            \"age\": 48,\r\n            \"accomodation_type_id\": 2,\r\n            \"employment_type_id\": 2,\r\n            \"gross_yearly_income\": 24000,\r\n            \"monthly_rent\": 1600,\r\n            \"employed_since\": \"2023-02-01T00:00:00\"\r\n        }\r\n    },\r\n    \"output\": {\r\n        \"score_sum\": null,\r\n        \"pd\": null,\r\n        \"scorecard_name\": null\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "multi customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"input\": {\r\n            \"product_type\": \"UL\",\r\n            \"application_date\": \"2023-09-26T14:14:51.232320\",\r\n            \"car_loan_debt\": 3000,\r\n            \"mortgage_debt\": 0,\r\n            \"study_loan_debt\": 3000,\r\n            \"unsecured_debt\": 60000,\r\n            \"requested_loan_amount\": 1000000,\r\n            \"applicant1\": {\r\n                \"age\": 34,\r\n                \"accomodation_type_id\": 2,\r\n                \"employment_type_id\": 1,\r\n                \"gross_yearly_income\": 33000,\r\n                \"monthly_rent\": 1200,\r\n                \"employed_since\": \"2020-04-01T00:00:00\"\r\n            }\r\n        },\r\n        \"output\": {\r\n            \"score_sum\": null,\r\n            \"pd\": null,\r\n            \"scorecard_name\": null\r\n        }\r\n    },\r\n    {\r\n        \"input\": {\r\n            \"product_type\": \"UL\",\r\n            \"application_date\": \"2023-09-24T14:14:51.234228\",\r\n            \"car_loan_debt\": 16000,\r\n            \"mortgage_debt\": 150000,\r\n            \"study_loan_debt\": 3000,\r\n            \"unsecured_debt\": 30000,\r\n            \"requested_loan_amount\": 5000,\r\n            \"applicant1\": {\r\n                \"age\": 32,\r\n                \"accomodation_type_id\": 1,\r\n                \"employment_type_id\": 2,\r\n                \"gross_yearly_income\": 24000,\r\n                \"monthly_rent\": 0,\r\n                \"employed_since\": \"2021-02-01T00:00:00\"\r\n            }\r\n        },\r\n        \"output\": {\r\n            \"score_sum\": null,\r\n            \"pd\": null,\r\n            \"scorecard_name\": null\r\n        }\r\n    },\r\n    {\r\n        \"input\": {\r\n            \"product_type\": \"CC\",\r\n            \"application_date\": \"2023-09-15T14:14:51.229139\",\r\n            \"car_loan_debt\": 28000,\r\n            \"mortgage_debt\": 0,\r\n            \"study_loan_debt\": 7000,\r\n            \"unsecured_debt\": 36000,\r\n            \"requested_loan_amount\": null,\r\n            \"applicant1\": {\r\n                \"age\": 48,\r\n                \"accomodation_type_id\": 2,\r\n                \"employment_type_id\": 2,\r\n                \"gross_yearly_income\": 24000,\r\n                \"monthly_rent\": 1600,\r\n                \"employed_since\": \"2023-02-01T00:00:00\"\r\n            }\r\n        },\r\n        \"output\": {\r\n            \"score_sum\": null,\r\n            \"pd\": null,\r\n            \"scorecard_name\": null\r\n        }\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/customers",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer missing data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"input\": {\r\n    \"product_type\": \"CC\",\r\n    \"application_date\": \"2023-09-15T14:14:51.229139\",\r\n    \"car_loan_debt\": 28000,\r\n    \"mortgage_debt\": 0,\r\n    \"study_loan_debt\": 7000,\r\n    \"unsecured_debt\": 36000,\r\n    \"requested_loan_amount\": null,\r\n    \"applicant1\": {\r\n      \"age\": 48,\r\n      \"accomodation_type_id\": null,\r\n      \"employment_type_id\": 2,\r\n      \"gross_yearly_income\": null,\r\n      \"monthly_rent\": 1600,\r\n      \"employed_since\": null\r\n    }\r\n  },\r\n  \"output\": {\r\n    \"score_sum\": null,\r\n    \"pd\": null,\r\n    \"scorecard_name\": null\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

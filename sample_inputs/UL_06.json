@@ -1,0 +1,24 @@
+{
+    "input": {
+        "product_type": "UL",
+        "application_date": "2023-09-13T14:14:51.245657",
+        "car_loan_debt": 47000,
+        "mortgage_debt": 290000,
+        "study_loan_debt": 10000,
+        "unsecured_debt": 23000,
+        "requested_loan_amount": 10000,
+        "applicant1": {
+            "age": 35,
+            "accomodation_type_id": 1,
+            "employment_type_id": 7,
+            "gross_yearly_income": 44000,
+            "monthly_rent": 0,
+            "employed_since": "2020-05-01T00:00:00"
+        }
+    },
+    "output": {
+        "score_sum": null,
+        "pd": null,
+        "scorecard_name": null
+    }
+}

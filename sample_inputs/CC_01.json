@@ -1,0 +1,24 @@
+{
+    "input": {
+        "product_type": "CC",
+        "application_date": "2023-09-27T14:14:51.233401",
+        "car_loan_debt": 27000,
+        "mortgage_debt": 0,
+        "study_loan_debt": 20000,
+        "unsecured_debt": 2000,
+        "requested_loan_amount": null,
+        "applicant1": {
+            "age": 32,
+            "accomodation_type_id": 3,
+            "employment_type_id": 1,
+            "gross_yearly_income": 80000,
+            "monthly_rent": 700,
+            "employed_since": "2020-04-01T00:00:00"
+        }
+    },
+    "output": {
+        "score_sum": null,
+        "pd": null,
+        "scorecard_name": null
+    }
+}
